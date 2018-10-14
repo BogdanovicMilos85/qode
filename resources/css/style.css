@@ -1,0 +1,242 @@
+/* Qode style */
+
+/* ------------------------------------------- */
+/* BASIC SETUP                                 */
+/* ------------------------------------------- */
+
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body, html {
+	background-image: url(images/background.jpg);
+	background-attachment: fixed;
+	background-position: top center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-family: 'Montserrat', 'Arial', sans-serif; 
+	font-weight: 400;
+	font-size: 20px;
+	text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+/* ------------------------------------------- */
+/* REUSABLE COMPONENTS                         */
+/* ------------------------------------------- */
+
+.container {
+	max-width: 1007px;
+	margin: 0 auto;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+img {
+	vertical-align: bottom;
+	max-width: 100%;
+}
+
+/* ------- HEADINGS ---------- */
+
+h1, h2 {
+	color: #220008;
+	font-family: 'Playfair Display', serif;
+	font-size: 120%;
+	margin: 10px 0;
+}
+
+h3 {
+	text-transform: uppercase;
+	color: #f84970;
+	font-size: 50%;
+	font-weight: 500;
+	letter-spacing: 1px;
+	margin-top: 10px;
+}
+
+/* ------- LINKS ---------- */
+
+a:link, a:visited {
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #bdb3b6;
+	font-size: 60%;
+	letter-spacing: 1px;
+	-webkit-transition: color 0.2s;
+	transition: color 0.2s;
+}
+
+a:hover, a:active {
+	color: #f84970;
+}
+
+/* ------- PARAGRAPHS ---------- */
+
+.para {
+	color: #929090;
+	line-height: 145%;
+	font-size: 65%;
+	margin-bottom: 5px;
+}
+
+/* ----------------------------------------------------- */
+/* ---- HEADER ----- -*
+/* ----------------------------------------------------- */
+
+.logo {
+    display: block;
+    float: left;
+    text-decoration: none;
+	height: 100px;
+	width: auto;
+}
+
+nav {
+	float: right;
+	height: auto;
+	width: auto;
+}
+
+.top-nav, .main-nav {
+	list-style: none;
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+.top-nav {
+	text-align: right;
+	margin-top: 20px;
+}
+
+.top-nav li, .main-nav li {
+	display: inline-block;
+}
+
+.top-nav li a:link, .top-nav li a:visited {
+	font-size: 55%;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #685b5b;
+	padding: 5px 10px;
+	-webkit-transition: color 0.2s;
+	transition: color 0.2s;
+}
+
+.top-nav li a:hover, .top-nav li a:active {
+	background-color: #f2e0e4;
+	color: #f84970;
+}
+
+.main-nav {
+	margin-top: 19px;
+	border-top: 1px solid #dad7d7;	
+}
+
+.main-nav li {
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
+.main-nav li:first-child {
+	border-left: 1px solid #dad7d7;
+}
+
+.main-nav li:last-child {
+	border-right: 1px solid #dad7d7;
+}
+
+.main-nav li a:link, .main-nav li a:visited {
+	display: inline-block;
+	background-color: #fff;
+	font-size: 65%;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #220008;
+	padding: 10px 13px;
+	-webkit-transition: color 0.2s, background 0.2s;
+	transition: color 0.2s, background 0.2s;
+}
+
+.main-nav li a:hover, .main-nav li a:active {
+	background-color: #f84970;
+	color: #fff;
+}
+
+.mobile-nav-icon {
+	cursor: pointer;
+	display: none;
+}
+
+/* ------------------------------------------------------- */
+/* ---- MAIN CONTENT ---- */
+/* ------------------------------------------------------- */
+
+.box {
+	position: relative;
+	max-width: 50%;
+	float: left;
+	background-color: #fff;
+	padding: 1%;
+	border-top: 1px solid #dad7d7;
+	border-left: 1px solid #dad7d7;
+	-webkit-transition: top ease 0.1s, left ease 0.1s;
+	transition: top ease 0.1s, left ease 0.1s;
+}
+
+.box:nth-of-type(2n + 2) {
+	border-right: 1px solid #dad7d7;
+}
+
+.box:nth-of-type(7n), .box:last-of-type {
+	border-bottom: 1px solid #dad7d7;
+}
+
+.box:hover {
+	top: -10px;
+	left: -10px;
+	-webkit-box-shadow: 0 0 5px 10px #f84970;
+	box-shadow: 10px 10px 0px 0px #f84970;
+}
+
+.feed {
+	width: 50%;
+	float: right;
+}
+
+.news-feed {
+	width: 50%;
+	float: left;
+}
+
+.news-feed h2 {
+	font-size: 110%;
+	margin: 8px 0;
+}
+
+/* ------------------------------------------------------- */
+/* ----- FOOTER --- */
+/* ------------------------------------------------------- */
+
+footer {
+	width: 100%;
+	padding: 35px 0;
+	text-align: center;
+	color: #929090;
+	font-size: 55%;
+}

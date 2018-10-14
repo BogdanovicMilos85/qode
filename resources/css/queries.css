@@ -1,0 +1,90 @@
+@media only screen and (max-width: 1080px) {
+	.wrapper { padding: 0 2%; }
+	.main-nav li a:link, .main-nav li a:visited {
+    	padding: 10px 11px;
+	}
+	.box:nth-of-type(odd){ clear: left; }
+}
+
+
+@media only screen and (max-width: 1000px) {
+    body { font-size: 18px; }
+	.wrapper { padding: 0 4%; }
+	.logo {
+		float: none;
+		width: 100%;
+		margin: 15px auto;
+		text-align: center;
+	}
+	.box { 
+        max-width: 85%;
+		margin: 0 auto 4% auto;
+		float: none;
+		padding: 2%;
+		text-align: center;
+		border: 1px solid #dad7d7;
+    }
+	nav { float: none; }
+    .top-nav, .main-nav, .js--main-nav { display: none; }
+    .mobile-nav-icon {
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+		font-size: 180%;
+		color: #220008;
+	}
+    .main-nav {
+		text-align: center;
+		margin: 0 auto 15px;
+		width: 30%;
+	}
+    .main-nav li {
+		display: block;
+		margin: 0;
+		float: none;
+		border: 1px solid #dad7d7;
+	}
+    .main-nav li a:link, .main-nav li a:visited {
+		display: block;
+        padding: 10px 0;
+        font-size: 100%;
+    }
+	.feed { padding: 5%; }
+	.news-feed { margin-top: 7%; }
+	.news-feed h2 {
+		font-size: 120%;
+		margin: 10px 0;
+	}
+	.para {
+		font-size: 85%;
+		margin-bottom: 15px;
+	}
+	h3 { font-size: 60%; }
+	a:link, a:visited { font-size: 70%; }
+	footer { font-size: 65%;}
+	
+}
+
+
+@media only screen and (max-width: 800px) {
+    body { font-size: 16px; }
+	.box { max-width: 90%; }
+	.news-feed { margin-top: 3%; }
+	.main-nav { width: 60%; } 
+}
+
+
+@media only screen and (max-width: 500px) {
+	body { background-attachment: inherit; }
+	.main-nav { width: 70%; }
+	.box { max-width: 100%;}
+    .news-feed {
+		width: 100%; 
+		float: none;
+		margin-top: 0; 
+	}
+	.feed {
+		width: auto; 
+		float: none; 
+	}
+}
