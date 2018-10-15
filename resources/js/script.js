@@ -25,3 +25,15 @@ $(document).ready(function () {
 		}	
 	});
 });
+
+let boxes = document.querySelectorAll('.box');
+let smallBox = document.querySelector('.box-small');
+
+let boxesArr = Array.prototype.slice.call(boxes);
+
+if(boxesArr.length % 2 === 0) {
+	smallBox.style.clear= 'left';
+} else {
+	smallBox.style.clear= 'none';
+	smallBox.style.borderRight = '1px solid #dad7d7';
+}

@@ -55,6 +55,7 @@ img {
 h1, h2 {
 	color: #220008;
 	font-family: 'Playfair Display', serif;
+	font-weight: 400;
 	font-size: 120%;
 	margin: 10px 0;
 }
@@ -63,8 +64,7 @@ h3 {
 	text-transform: uppercase;
 	color: #f84970;
 	font-size: 50%;
-	font-weight: 500;
-	letter-spacing: 1px;
+	font-weight: 500;;
 	margin-top: 10px;
 }
 
@@ -75,7 +75,6 @@ a:link, a:visited {
 	text-decoration: none;
 	color: #bdb3b6;
 	font-size: 60%;
-	letter-spacing: 1px;
 	-webkit-transition: color 0.2s;
 	transition: color 0.2s;
 }
@@ -187,31 +186,70 @@ nav {
 /* ---- MAIN CONTENT ---- */
 /* ------------------------------------------------------- */
 
-.box {
+.box, .box-small {
 	position: relative;
 	max-width: 50%;
+	height: auto;
 	float: left;
 	background-color: #fff;
 	padding: 1%;
+	-webkit-transition: -webkit-transform 0.2s, -webkit-box-shadow 0.2s;
+	transition: -webkit-transform 0.2s, -webkit-box-shadow 0.2s;
+	transition: transform 0.2s, box-shadow 0.2s;
+	transition: transform 0.2s, box-shadow 0.2s, -webkit-transform 0.2s, -webkit-box-shadow 0.2s;
+}
+
+.box {
 	border-top: 1px solid #dad7d7;
 	border-left: 1px solid #dad7d7;
-	-webkit-transition: top ease 0.1s, left ease 0.1s;
-	transition: top ease 0.1s, left ease 0.1s;
+}
+
+.box-small {
+	border-bottom: 1px solid #dad7d7;
+	border-left: 1px solid #dad7d7;
 }
 
 .box:nth-of-type(2n + 2) {
 	border-right: 1px solid #dad7d7;
 }
 
-.box:nth-of-type(7n), .box:last-of-type {
+.box:last-of-type, .box:nth-last-of-type(2) {
 	border-bottom: 1px solid #dad7d7;
 }
 
-.box:hover {
-	top: -10px;
-	left: -10px;
-	-webkit-box-shadow: 0 0 5px 10px #f84970;
-	box-shadow: 10px 10px 0px 0px #f84970;
+.box-small:nth-of-type(even) {
+	border-right: 1px solid #dad7d7;
+}
+
+.box:nth-of-type(odd), .box-small:nth-of-type(odd) { clear: left; }
+
+.box:hover, .box-small:hover {
+	-webkit-transform: translate(-10px, -10px);
+	transform: translate(-10px, -10px);
+	-webkit-box-shadow: 10px 10px 0px 0px #f84970,
+						9px 9px 0px 0px #f84970,
+						8px 8px 0px 0px #f84970,
+						7px 7px 0px 0px #f84970,
+						6px 6px 0px 0px #f84970,
+						5px 5px 0px 0px #f84970,
+						4px 4px 0px 0px #f84970,
+						3px 3px 0px 0px #f84970,
+						2px 2px 0px 0px #f84970,
+						1px 1px 0px 0px #f84970;
+	box-shadow: 10px 10px 0px 0px #f84970,
+				9px 9px 0px 0px #f84970,
+				8px 8px 0px 0px #f84970,
+				7px 7px 0px 0px #f84970,
+				6px 6px 0px 0px #f84970,
+				5px 5px 0px 0px #f84970,
+				4px 4px 0px 0px #f84970,
+				3px 3px 0px 0px #f84970,
+				2px 2px 0px 0px #f84970,
+				1px 1px 0px 0px #f84970;
+}
+
+.box-small:hover {
+	border-top: 1px solid #dad7d7;
 }
 
 .feed {
@@ -222,6 +260,7 @@ nav {
 .news-feed {
 	width: 50%;
 	float: left;
+	padding: 0 2%;
 }
 
 .news-feed h2 {
